@@ -43,4 +43,33 @@
       observer.observe(panel);
     });
   }
+  // Selettore lingua IT / EN
+  var langButtons = document.querySelectorAll(".lang-btn");
+  var translatable = document.querySelectorAll("[data-en]");
+
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    translatable.forEach(function (el) {
+      if (!el.dataset.it) el.dataset.it = el.textContent;
+      el.textContent = lang === "en" ? el.dataset.en : el.dataset.it;
+    });
+    langButtons.forEach(function (btn) {
+      btn.classList.toggle("active", btn.dataset.lang === lang);
+    });
+    try {
+      localStorage.setItem("cv-lang", lang);
+    } catch (e) {}
+  }
+
+  langButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      setLang(btn.dataset.lang);
+    });
+  });
+
+  var savedLang = "it";
+  try {
+    savedLang = localStorage.getItem("cv-lang") || "it";
+  } catch (e) {}
+  setLang(savedLang);
 })();

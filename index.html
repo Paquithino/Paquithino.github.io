@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Francesco Fabbro — Curriculum Vitae</title>
-<meta name="description" content="Francesco Fabbro — Ingegnere informatico e istruttore sportivo (windsurf, wingfoil, sci, skateboard). Curriculum interattivo.">
-<meta property="og:title" content="Francesco Fabbro — Curriculum">
-<meta property="og:description" content="Ingegnere informatico e istruttore sportivo. Curriculum interattivo.">
+<meta name="description" content="Francesco Fabbro — Ingegnere informatico e istruttore sportivo (windsurf, wingfoil, sci, skateboard). Curriculum Vitae interattivo.">
+<meta property="og:title" content="Francesco Fabbro — Curriculum Vitae">
+<meta property="og:description" content="Ingegnere informatico e istruttore sportivo. Curriculum Vitae interattivo.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#141c1e">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%81%3C/text%3E%3C/svg%3E">
@@ -22,17 +22,21 @@
   <div class="topbar">
     <div class="topbar-left">
       <span class="topbar-mark"></span>
-      <span class="topbar-label">Curriculum pieghevole</span>
+      <span class="topbar-label" data-en="Foldable Curriculum">Curriculum pieghevole</span>
     </div>
-    <span class="topbar-hint">Clicca le ante numerate per aprirle e richiuderle</span>
+    <div class="lang-switch" role="group" aria-label="Lingua / Language">
+      <button type="button" class="lang-btn active" data-lang="it">IT</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <span class="topbar-hint" data-en="Click the numbered panels to open and close them">Clicca le ante numerate per aprirle e richiuderle</span>
   </div>
 
   <nav class="jumpnav" aria-label="Sezioni del CV">
-    <a href="#sec-chi-sono" class="jumpnav-pill">Chi sono</a>
-    <a href="#sec-profilo" class="jumpnav-pill">Profilo</a>
-    <a href="#sec-esperienze" class="jumpnav-pill">Esperienze</a>
-    <a href="#sec-formazione" class="jumpnav-pill">Formazione</a>
-    <a href="#sec-competenze" class="jumpnav-pill">Competenze</a>
+    <a href="#sec-chi-sono" class="jumpnav-pill" data-en="About me">Chi sono</a>
+    <a href="#sec-profilo" class="jumpnav-pill" data-en="Profile">Profilo</a>
+    <a href="#sec-esperienze" class="jumpnav-pill" data-en="Experience">Esperienze</a>
+    <a href="#sec-formazione" class="jumpnav-pill" data-en="Education">Formazione</a>
+    <a href="#sec-competenze" class="jumpnav-pill" data-en="Skills">Competenze</a>
   </nav>
 
   <div class="folder" id="folder">
@@ -40,17 +44,17 @@
     <div class="panel open" data-panel="0" id="sec-chi-sono">
       <button class="spine" aria-expanded="true" aria-controls="panel-body-0">
         <span class="spine-num">01</span>
-        <span class="spine-label">Chi sono</span>
+        <span class="spine-label" data-en="About me">Chi sono</span>
       </button>
       <div class="body" id="panel-body-0">
         <div class="name">Francesco<br>Fabbro</div>
-        <div class="role">Ingegnere informatico · istruttore sportivo</div>
+        <div class="role" data-en="Software Engineer · Sports Instructor">Ingegnere informatico · istruttore sportivo</div>
         <hr class="hr">
         <div class="kv-grid">
           <div><div class="kv-label">E-mail</div><a class="kv-link" href="mailto:fabbro.fnc@gmail.com">fabbro.fnc@gmail.com</a></div>
-          <div><div class="kv-label">Telefono</div><a class="kv-link" href="https://wa.me/393472385226" target="_blank" rel="noopener">+39 347 2385226</a></div>
-          <div><div class="kv-label">Base</div>Campoformido (UD), Italia</div>
-          <div><div class="kv-label">Cittadinanza</div>Italiana e canadese</div>
+          <div><div class="kv-label" data-en="Phone">Telefono</div><a class="kv-link" href="https://wa.me/393472385226" target="_blank" rel="noopener">+39 347 2385226</a></div>
+          <div><div class="kv-label" data-en="Location">Base</div><span data-en="Campoformido (UD), Italy">Campoformido (UD), Italia</span></div>
+          <div><div class="kv-label" data-en="Citizenship">Cittadinanza</div><span data-en="Italian and Canadian">Italiana e canadese</span></div>
         </div>
       </div>
     </div>
@@ -58,41 +62,41 @@
     <div class="panel" data-panel="1" id="sec-profilo">
       <button class="spine" aria-expanded="false" aria-controls="panel-body-1">
         <span class="spine-num">02</span>
-        <span class="spine-label">Profilo</span>
+        <span class="spine-label" data-en="Profile">Profilo</span>
       </button>
       <div class="body" id="panel-body-1">
-        <div class="section-label">Profilo personale</div>
-        <p class="bio">Sono una persona solare e amichevole, con un carattere determinato che mi spinge a dare sempre il meglio in tutto ciò che faccio. Amo lo sport e credo che sia non solo un modo per mantenersi attivi, ma anche un'occasione unica per condividere emozioni e momenti speciali con gli altri. Che sia in un'attività individuale o di squadra, lo sport mi permette di rafforzare legami, vivere sfide stimolanti e trasmettere energia positiva a chi mi circonda. La mia passione per il movimento e la socialità riflette la mia attitudine alla vita: credo nel potere della condivisione e nel valore del sostegno reciproco per raggiungere grandi obiettivi.</p>
+        <div class="section-label" data-en="Personal profile">Profilo personale</div>
+        <p class="bio" data-en="I'm an outgoing, friendly person with a determined streak that pushes me to give my best in everything I do. I love sport, and I believe it's not just a way to stay active but a unique chance to share emotions and special moments with others. Whether it's an individual or a team activity, sport lets me build stronger bonds, take on stimulating challenges and pass on positive energy to the people around me. My passion for movement and connection reflects how I approach life: I believe in the power of sharing and in mutual support as the way to reach big goals.">Sono una persona solare e amichevole, con un carattere determinato che mi spinge a dare sempre il meglio in tutto ciò che faccio. Amo lo sport e credo che sia non solo un modo per mantenersi attivi, ma anche un'occasione unica per condividere emozioni e momenti speciali con gli altri. Che sia in un'attività individuale o di squadra, lo sport mi permette di rafforzare legami, vivere sfide stimolanti e trasmettere energia positiva a chi mi circonda. La mia passione per il movimento e la socialità riflette la mia attitudine alla vita: credo nel potere della condivisione e nel valore del sostegno reciproco per raggiungere grandi obiettivi.</p>
       </div>
     </div>
 
     <div class="panel" data-panel="2" id="sec-esperienze">
       <button class="spine" aria-expanded="false" aria-controls="panel-body-2">
         <span class="spine-num">03</span>
-        <span class="spine-label">Esperienze</span>
+        <span class="spine-label" data-en="Experience">Esperienze</span>
       </button>
       <div class="body" id="panel-body-2">
-        <div class="section-label">Esperienze professionali</div>
+        <div class="section-label" data-en="Professional experience">Esperienze professionali</div>
         <div class="entries">
           <div>
             <div class="entry-title">Stage as I.T. Developer</div>
             <div class="entry-org">Solari di Udine S.p.A. — Udine</div>
-            <p class="entry-desc">Creazione, personalizzazione e configurazione di sistemi operativi embedded tramite Yocto Project, progettando immagini ottimizzate e tailor-made per soddisfare specifiche esigenze hardware.</p>
+            <p class="entry-desc" data-en="Built, customized and configured embedded operating systems using the Yocto Project, designing optimized, tailor-made images for specific hardware requirements.">Creazione, personalizzazione e configurazione di sistemi operativi embedded tramite Yocto Project, progettando immagini ottimizzate e tailor-made per soddisfare specifiche esigenze hardware.</p>
           </div>
           <div>
             <div class="entry-title">Stage as I.T. Technician</div>
             <div class="entry-org">Fec Italia — Udine</div>
-            <p class="entry-desc">Fornitura di assistenza tecnica di primo e secondo livello agli utenti, risolvendo problemi hardware e software in modo efficiente e tempestivo.</p>
+            <p class="entry-desc" data-en="Provided first- and second-level technical support to users, resolving hardware and software issues efficiently and promptly.">Fornitura di assistenza tecnica di primo e secondo livello agli utenti, risolvendo problemi hardware e software in modo efficiente e tempestivo.</p>
           </div>
           <div>
             <div class="entry-title">Windsurf &amp; WingFoil Instructor</div>
             <div class="entry-org">Ion Club — Fuerteventura</div>
-            <p class="entry-desc">Insegnamento delle tecniche di base e avanzate di controllo della vela e della tavola, migliorando gradualmente la confidenza e le abilità degli allievi in diverse condizioni.</p>
+            <p class="entry-desc" data-en="Taught basic and advanced sail and board control techniques, gradually building students' confidence and skills across different conditions.">Insegnamento delle tecniche di base e avanzate di controllo della vela e della tavola, migliorando gradualmente la confidenza e le abilità degli allievi in diverse condizioni.</p>
           </div>
           <div>
             <div class="entry-title">Ski &amp; Telemark, Windsurf &amp; Wingfoil, Skateboard instructor</div>
             <div class="entry-org">A.S.D. FairPlay</div>
-            <p class="entry-desc">Mi occupo di pianificare e condurre lezioni personalizzate per studenti di diversi livelli, adattando le tecniche di insegnamento in base alle capacità, agli obiettivi e al livello di esperienza di ogni allievo. Oltre che ad occuparmi di parte dell'organizzazione logistica dello sci-club.</p>
+            <p class="entry-desc" data-en="Planned and led personalized lessons for students of all levels, adapting teaching techniques to each student's abilities, goals and experience — alongside part of the ski club's logistical organization.">Mi occupo di pianificare e condurre lezioni personalizzate per studenti di diversi livelli, adattando le tecniche di insegnamento in base alle capacità, agli obiettivi e al livello di esperienza di ogni allievo. Oltre che ad occuparmi di parte dell'organizzazione logistica dello sci-club.</p>
           </div>
         </div>
       </div>
@@ -101,27 +105,27 @@
     <div class="panel" data-panel="3" id="sec-formazione">
       <button class="spine" aria-expanded="false" aria-controls="panel-body-3">
         <span class="spine-num">04</span>
-        <span class="spine-label">Formazione</span>
+        <span class="spine-label" data-en="Education">Formazione</span>
       </button>
       <div class="body" id="panel-body-3">
-        <div class="section-label">Istruzione e formazione</div>
+        <div class="section-label" data-en="Education and training">Istruzione e formazione</div>
         <div class="entries" style="margin-bottom: var(--space-6);">
           <div>
-            <div class="entry-title">Laurea in Ingegneria Informatica</div>
-            <div class="entry-org">Università degli Studi di Padova — conseguita nel 2026</div>
+            <div class="entry-title" data-en="Bachelor's Degree in Computer Engineering">Laurea in Ingegneria Informatica</div>
+            <div class="entry-org" data-en="University of Padua — awarded in 2026">Università degli Studi di Padova — conseguita nel 2026</div>
           </div>
           <div>
-            <div class="entry-title">Diploma di Liceo Scientifico</div>
+            <div class="entry-title" data-en="Scientific High School Diploma">Diploma di Liceo Scientifico</div>
             <div class="entry-org">Liceo Scientifico Niccolò Copernico — Udine</div>
           </div>
         </div>
-        <div class="sub-label">Certificazioni</div>
+        <div class="sub-label" data-en="Certifications">Certificazioni</div>
         <div class="tag-row">
           <span class="tag tag-outline">VDWS Windsurf Instructor License</span>
-          <span class="tag tag-outline">Diploma di specializzazione Telemark</span>
-          <span class="tag tag-outline">Tecnico federale allenatore I° livello skateboard FISR</span>
-          <span class="tag tag-outline">Allenatore I° livello sci alpino</span>
-          <span class="tag tag-outline">Diploma maestro di sci</span>
+          <span class="tag tag-outline" data-en="Telemark Specialization Diploma">Diploma di specializzazione Telemark</span>
+          <span class="tag tag-outline" data-en="FISR Level-1 Skateboard Federal Coach">Tecnico federale allenatore I° livello skateboard FISR</span>
+          <span class="tag tag-outline" data-en="Level-1 Alpine Ski Coach">Allenatore I° livello sci alpino</span>
+          <span class="tag tag-outline" data-en="Ski Instructor Diploma">Diploma maestro di sci</span>
         </div>
       </div>
     </div>
@@ -129,13 +133,13 @@
     <div class="panel" data-panel="4" id="sec-competenze">
       <button class="spine" aria-expanded="false" aria-controls="panel-body-4">
         <span class="spine-num">05</span>
-        <span class="spine-label">Competenze</span>
+        <span class="spine-label" data-en="Skills">Competenze</span>
       </button>
       <div class="body" id="panel-body-4">
-        <div class="section-label">Competenze tecniche</div>
+        <div class="section-label" data-en="Technical skills">Competenze tecniche</div>
         <div class="stack">
           <div>
-            <div class="sub-label">Linguaggi</div>
+            <div class="sub-label" data-en="Programming languages">Linguaggi</div>
             <div class="tag-row">
               <span class="tag tag-accent">JavaScript</span>
               <span class="tag tag-accent">TypeScript</span>
@@ -153,23 +157,23 @@
             </div>
           </div>
           <div>
-            <div class="sub-label">Sistemi e strumenti</div>
+            <div class="sub-label" data-en="Systems &amp; tools">Sistemi e strumenti</div>
             <div class="tag-row">
-              <span class="tag tag-neutral">Linux embedded</span>
+              <span class="tag tag-neutral" data-en="Embedded Linux">Linux embedded</span>
               <span class="tag tag-neutral">Yocto Project</span>
               <span class="tag tag-neutral">Excel</span>
               <span class="tag tag-neutral">Microsoft Office</span>
             </div>
           </div>
         </div>
-        <div class="sub-label">Lingue</div>
+        <div class="sub-label" data-en="Spoken languages">Lingue</div>
         <div class="lang-list" style="margin-bottom: var(--space-6);">
-          <div class="lang-row"><span>Italiano</span><span class="lang-level">Madrelingua</span></div>
-          <div class="lang-row"><span>Inglese</span><span class="lang-level">Fluente</span></div>
-          <div class="lang-row"><span>Spagnolo</span><span class="lang-level">Fluente</span></div>
+          <div class="lang-row"><span data-en="Italian">Italiano</span><span class="lang-level" data-en="Native">Madrelingua</span></div>
+          <div class="lang-row"><span data-en="English">Inglese</span><span class="lang-level" data-en="Fluent">Fluente</span></div>
+          <div class="lang-row"><span data-en="Spanish">Spagnolo</span><span class="lang-level" data-en="Fluent">Fluente</span></div>
         </div>
-        <div class="sub-label">Tempo libero</div>
-        <p class="entry-desc">Sono una persona solare, per me lo sport rappresenta un'occasione per condividere emozioni e ricordi di momenti indimenticabili.</p>
+        <div class="sub-label" data-en="Free time">Tempo libero</div>
+        <p class="entry-desc" data-en="I'm an outgoing person — for me, sport is a chance to share emotions and build unforgettable memories.">Sono una persona solare, per me lo sport rappresenta un'occasione per condividere emozioni e ricordi di momenti indimenticabili.</p>
       </div>
     </div>
 
