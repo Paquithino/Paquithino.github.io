@@ -1,4 +1,15 @@
 (function () {
+  // Se il link è stato aperto con un # residuo (da una condivisione precedente),
+  // parti comunque da cima pagina invece di saltare a quella sezione
+  if (window.location.hash) {
+    history.replaceState(
+      null,
+      "",
+      window.location.pathname + window.location.search,
+    );
+    window.scrollTo(0, 0);
+  }
+
   var panels = document.querySelectorAll(".panel");
   var desktopQuery = window.matchMedia("(min-width: 901px)");
 
@@ -43,6 +54,17 @@
       observer.observe(panel);
     });
   }
+
+  // Scorri alla sezione senza mai scrivere # nell'indirizzo
+  // (così il link condiviso apre sempre da "Chi sono", non dall'ultima sezione vista)
+  pills.forEach(function (pill) {
+    pill.addEventListener("click", function (e) {
+      e.preventDefault();
+      var target = document.querySelector(pill.getAttribute("href"));
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
   // Selettore lingua IT / EN
   var langButtons = document.querySelectorAll(".lang-btn");
   var translatable = document.querySelectorAll("[data-en]");
