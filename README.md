@@ -16,4 +16,4 @@ Apri `index.html` direttamente nel browser, oppure usa l'estensione **Live Serve
 
 ## Pubblicazione
 
-Il sito è pubblicato su GitHub Pages: https://tuonome.github.io
+Il sito è pubblicato su GitHub Pages: (https://paquithino.github.io/#sec-competenze)
